@@ -1,0 +1,155 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.back{
+    height: 100vh;
+    width: 100%;
+    position:relative;
+}
+.back>img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+.top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.working-area{
+    width: 86%;
+    position: relative;
+    height: 100vh;
+    max-width:1600px;
+    margin: 0 auto;
+}
+.nav{
+    padding: 20px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nleft , .nright{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.nleft>img{
+    height: 60px;
+}
+.nleft>a{
+    pointer-events: all;
+    color: white;
+    font-family: poppins;
+    text-decoration: none;
+    text-transform:uppercase;
+    font-size: 0.8vw;
+    font-weight:600;
+}
+.nright>a{
+    pointer-events: all;
+    color: white;
+    font-family: poppins;
+    text-decoration: none;
+    text-transform:uppercase;
+    font-size: 0.8vw;
+    font-weight:600;
+}
+.hero{
+    width: 100%;
+     display: flex;
+     justify-content: space-between;
+     position: absolute;
+     transform: translate(-50%, -50%);
+     top: 50%;
+     left: 50%;
+}
+.heroleft{
+    min-width:50%;
+}
+.elem{
+    height: 8vw;
+    overflow: hidden;
+    position: relative;
+}
+.heroleft .elem>h1:nth-child(1){
+    top: 0;
+}
+.elem>h1{
+    position: absolute;
+    line-height:.9;
+    top: 100%;
+    left: 0;
+    font-family: kajiro;
+    color: white;
+    font-weight: 100;
+    font-size: 9vw;
+    letter-spacing: 2px;
+}
+.heroleft>button{
+    pointer-events: all;
+    margin-top: 2vw;
+    padding:.5vw 3vw;
+    background-color: rgb(255, 255, 255);
+    font-family: kajiro;
+    font-weight: 900;
+    letter-spacing:1px;
+    font-size: 2vw;
+    border: none;
+    outline: none;   
+}
+.heroright{
+    width:12%;
+}
+.heroright>h6{
+    color: white;
+    font-family: poppins;
+    font-size: 0.5vw;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.heroright>h6:nth-child(3){
+    margin-bottom: 7vw;
+    margin-top: 1vw;
+    margin-left: 2vw;
+    width: 85%;
+    text-align: right;
+}
+.box{
+    height: 5vw;
+    width: 9vw;
+    margin-left: 1vw;
+    position: relative;
+    /* overflow: hidden; */
+}
+.box>img{
+    height:100%;
+    width: 100%;
+   background-size: cover;
+   background-position: center; 
+}
+.heroright>p{
+    color: white;
+    font-family: poppins;
+    font-size: 0.5vw;
+    text-align:right;
+    font-weight: 500;
+}
+::-webkit-scrollbar{
+    display: none;
+}
